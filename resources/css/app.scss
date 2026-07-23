@@ -8,3 +8,19 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+/* Плавные ховеры для меню */
+.nav-pills .nav-link {
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    border-radius: 8px;
+}
+
+.nav-pills .nav-link:hover:not(.active) {
+    background-color: rgba(var(--bs-primary-rgb), 0.1);
+}
+
+/* Эффект выполнено для задач */
+.task-completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
